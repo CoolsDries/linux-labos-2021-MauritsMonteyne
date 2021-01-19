@@ -401,7 +401,7 @@ Maak in de directory `linux/` twee tekstbestanden aan, met naam `tekst1a` en `te
 1. Creëer in je home-directory een archief `linux.tar.bz2` van de directory `linux/` en alle inhoud.
 
     ```
-    $ tar cjvf linux.tar.bz2 linux
+    $ tar -cjvf linux.tar.bz2 linux
     ```
 
 2. Verwijder nu volledig de directory `linux/`
@@ -419,6 +419,6 @@ Maak in de directory `linux/` twee tekstbestanden aan, met naam `tekst1a` en `te
 4. Pak het archief opnieuw uit in je home-directory.
 
     ```
-    $ tar xvf linux.tar.bz2 linux
+    $ tar -xvf linux.tar.bz2 linux
     ```
 
