@@ -47,7 +47,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
     ```
     
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     # Print args onder elkaar
     if [[ $# -gt 0 ]]; then
@@ -62,7 +62,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 2. Schrijf een script `gebruikerslijst.sh` dat een gesorteerde lijst van users (uit `/etc/passwd`) weergeeft op het scherm. Maak gebruik van het het commando `cut`.
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     # Gesorteerde lijst van users
     echo "$(cut -d: -f 1 /etc/passwd | sort)"
@@ -70,7 +70,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 3. Schrijf een script `elf-params.sh` dat werkt zoals `onderelkaar.sh`, maar maximaal 11 parameters afdrukt. Extra parameters worden genegeerd.  Positionele parameters en `shift` zijn een tip.
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     # Print eerste 11 parameters
     COUNTER=0
@@ -84,7 +84,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 4. Schrijf een script `datum.sh` dat het aantal elementen van het commando `date` weergeeft en daarna al de elementen onder elkaar. Maak gebruik van positionele parameters en het `set` commando. Gebruik ook een `while`-lus.
     ```bash
-    /bin/bash
+    #!/bin/bash
 
     # Print date output onder elkaar
     set $(date)
@@ -100,7 +100,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 5. Vraag aan de gebruiker van dit script een naam voor een bestand, schrijf dit vervolgens weg en zorg ervoor dat het bestand uitvoerbaar is. (opm. geen unit tests)
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     clear
     echo -n "Geef naam voor bestand:"
@@ -116,7 +116,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 6. Dit script zal een bestand kopiëren. Bron en doel worden als argumenten meegegeven. Test of het doelbestand bestaat. Indien wel, wordt het script afgebroken. (Opm. geen unit tests voor deze oefening)
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     FILE="$1"
     DOEL="$2"
@@ -152,7 +152,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 8. Dit script moet testen of een bestand (opvragen aan gebruiker) bestaat en uitvoerbaar is, indien niet, moet het uitvoerbaar gemaakt worden.
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     FILE="$1"
 
@@ -171,7 +171,7 @@ De unit tests van de oefeningen worden in volgorde uitgevoerd. Zolang er nog fou
 
 9. Dit script maakt gebruik van het cal (kalender commando). De gebruiker wordt verplicht om de drie eerste letters van de maand (jan-feb-maa-apr-mei-jun-jul-aug-sep-okt-nov-dec) in te geven. Geef foutmelding indien geen correcte maand wordt ingegeven en stop het script. De gebruiker kan ook het jaartal ingeven (niet verplicht). Indien niet ingegeven wordt het huidige jaar gebruikt.
     ```bash
-    #/bin/bash
+    #!/bin/bash
 
     clear
 
