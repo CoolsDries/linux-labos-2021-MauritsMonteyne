@@ -194,9 +194,8 @@ Deze oefeningen gebeuren met `lorem.txt`
     - Maak een lijst met voor elk woord het aantal keer dat het voorkomt
     - Sorteer op het aantal voorkomens en behoud de alfabetische sortering van de woorden
 
-    TODO: sorteert niet alfabetisch na voorkomen
     ```
-    $ cat lorem.txt | grep -oe [a-Z]* | sort | uniq -ci | sort -nr
+    $ cat lorem.txt | tr -cs '[:alpha:]' '\n' | sort | uniq -ci | sort -k1nr -k2
     ```
     ```
      11 sed 
