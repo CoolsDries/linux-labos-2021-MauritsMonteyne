@@ -434,13 +434,13 @@ Kopieer als je eigen gebruiker (niet als root!) nu opnieuw het bestand `/etc/hos
 6. Zorg er nu voor dat de groepseigenaar van de directory `verkoop` automatisch de groepseigenaar wordt van alle bestanden en directories die onder `verkoop` gemaakt worden. Geef de gebruikte commando’s.
 
     ```
-    $ chmod g+s verkoop/
+    $ chmod -R g+s verkoop/
     ```
 
 7. Doe hetzelfde voor de directory `inkoop`. Geef de gebruikte commando’s:
 
     ```
-    $ chmod g+s inkoop/
+    $ chmod -R g+s inkoop/
     ```
 
 8. Verander opnieuw naar gebruiker `alice` en laat deze gebruiker een leeg `bestand2` aanmaken in de directory `verkoop`. Geef de gebruikte commando’s:
